@@ -1,0 +1,13 @@
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.exe
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.deps.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.runtimeconfig.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.runtimeconfig.dev.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\bin\Debug\netcoreapp3.1\7. Truck Tour.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.csprojAssemblyReference.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.AssemblyInfoInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.AssemblyInfo.cs
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.csproj.CoreCompileInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\7. Truck Tour\obj\Debug\netcoreapp3.1\7. Truck Tour.genruntimeconfig.cache

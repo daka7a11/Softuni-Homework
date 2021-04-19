@@ -1,0 +1,12 @@
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.exe
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.deps.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.runtimeconfig.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.runtimeconfig.dev.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\bin\Debug\netcoreapp3.1\4. Fast Food.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.AssemblyInfoInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.AssemblyInfo.cs
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.csproj.CoreCompileInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\4. Fast Food\obj\Debug\netcoreapp3.1\4. Fast Food.genruntimeconfig.cache

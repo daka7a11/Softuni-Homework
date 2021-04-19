@@ -1,0 +1,13 @@
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.exe
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.deps.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.runtimeconfig.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.runtimeconfig.dev.json
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\bin\Debug\netcoreapp3.1\6. Songs Queue.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.AssemblyInfoInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.AssemblyInfo.cs
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.csproj.CoreCompileInputs.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.dll
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.pdb
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.genruntimeconfig.cache
+D:\XiXo\C#\C#Advanced\2.Ex.StacksAndQueues\6. Songs Queue\obj\Debug\netcoreapp3.1\6. Songs Queue.csprojAssemblyReference.cache
