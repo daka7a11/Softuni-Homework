@@ -26,6 +26,7 @@ x64/
 *.pdb
 *.pgc
 *.pgd
+*.zip
 *.rsp
 *.sbr
 *.tlb
