@@ -52,6 +52,18 @@ namespace CustomDoublyLinkedList
             {
                 Console.WriteLine(stringList.RemoveFirst());
             }
+
+            var list = new DoublyLinkedList<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                list.AddHead(i);
+            }
+
+            Console.WriteLine("NEW NEW NEW NEW");
+            foreach (var item in list)
+            {
+                Console.WriteLine($"VALUE : {item.Value}");
+            }
         }
     }
 }
