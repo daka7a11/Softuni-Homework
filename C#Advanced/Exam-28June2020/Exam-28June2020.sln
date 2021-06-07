@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Bombs", "01. Bombs\01. Bombs.csproj", "{0C0EEDFB-D8C7-4539-BCC6-42226E61EF41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Snake", "02. Snake\02. Snake.csproj", "{F00B1CA4-C853-46DF-B8FF-0DE03D32AEAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking", "Parking\Parking.csproj", "{64F7CEDF-ED21-41F2-80C2-36386FF7CEAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C0EEDFB-D8C7-4539-BCC6-42226E61EF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0EEDFB-D8C7-4539-BCC6-42226E61EF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0EEDFB-D8C7-4539-BCC6-42226E61EF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0EEDFB-D8C7-4539-BCC6-42226E61EF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00B1CA4-C853-46DF-B8FF-0DE03D32AEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00B1CA4-C853-46DF-B8FF-0DE03D32AEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00B1CA4-C853-46DF-B8FF-0DE03D32AEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00B1CA4-C853-46DF-B8FF-0DE03D32AEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F7CEDF-ED21-41F2-80C2-36386FF7CEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F7CEDF-ED21-41F2-80C2-36386FF7CEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F7CEDF-ED21-41F2-80C2-36386FF7CEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F7CEDF-ED21-41F2-80C2-36386FF7CEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2AA934B-FC7B-41F9-8C7C-8CC0CC8CFC8A}
+	EndGlobalSection
+EndGlobal
