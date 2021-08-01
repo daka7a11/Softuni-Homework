@@ -5,15 +5,10 @@ namespace CarManager
     public class Car
     {
         private string make;
-
         private string model;
-
         private double fuelConsumption;
-
         private double fuelAmount;
-
         private double fuelCapacity;
-
         private Car()
         {
             this.FuelAmount = 0;
