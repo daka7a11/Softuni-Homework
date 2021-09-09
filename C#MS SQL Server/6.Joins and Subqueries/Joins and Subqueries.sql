@@ -157,4 +157,22 @@ LEFT JOIN Rivers r ON cr.RiverId=r.Id
 GROUP BY c2.CountryName
 ORDER BY HighestPeakElevation DESC, LongestRiverLength DESC, c2.CountryName
 
---
+--Problem 18.*Highest Peak Name and Elevation by Country
+SELECT TOP(5)
+	t.Country AS [Country],
+	t.PeakName AS [Highest Peak Name],
+	t.Elevation AS [Highest Peak Elevation],
+	t.Mountain AS [Mountain]
+FROM(
+	SELECT
+		c.CountryName AS [Country],
+		ISNULL(p.PeakName,'(no highest peak)') AS PeakName,
+		ISNULL(p.Elevation,'0') AS Elevation,
+		ISNULL(m.MountainRange,'(no mountain)') AS Mountain,
+		DENSE_RANK() OVER(PARTITION BY c.CountryName ORDER BY p.Elevation DESC) AS [Ranking]
+	FROM Countries AS c
+	LEFT JOIN MountainsCountries AS mc ON c.CountryCode=mc.CountryCode
+	LEFT JOIN Mountains AS m ON mc.MountainId=m.Id
+	LEFT JOIN Peaks AS p ON m.Id=p.MountainId) AS t
+WHERE t.Ranking = 1
+ORDER BY t.Country, t.PeakName
