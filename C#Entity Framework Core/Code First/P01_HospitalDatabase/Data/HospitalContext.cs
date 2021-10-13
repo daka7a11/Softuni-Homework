@@ -124,12 +124,12 @@ namespace P01_HospitalDatabase.Data
                 entity.Property(d => d.Name)
                       .IsRequired()
                       .IsUnicode()
-                      .HasMaxLength(50);
+                      .HasMaxLength(100);
 
                 entity.Property(d => d.Speciality)
                       .IsRequired()
                       .IsUnicode()
-                      .HasMaxLength(50);
+                      .HasMaxLength(100);
             });
         }
     }
