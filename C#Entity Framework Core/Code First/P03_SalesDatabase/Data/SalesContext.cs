@@ -42,6 +42,9 @@ namespace P03_SalesDatabase.Data
 
                 entity.Property(p => p.Price)
                       .IsRequired();
+
+                entity.Property(p => p.Description)
+                      .HasDefaultValue("No description");
             });
 
             modelBuilder.Entity<Customer>(entity =>
@@ -78,7 +81,8 @@ namespace P03_SalesDatabase.Data
                 entity.HasKey(x => x.SaleId);
 
                 entity.Property(s => s.Date)
-                      .IsRequired();
+                      .IsRequired()
+                      .HasDefaultValueSql("GETDATE()");
 
                 entity.HasOne(s => s.Product)
                       .WithMany(p => p.Sales)
@@ -95,6 +99,7 @@ namespace P03_SalesDatabase.Data
                       .HasForeignKey(s => s.StoreId)
                       .OnDelete(DeleteBehavior.Restrict);
             });
+
         }
     }
 }
