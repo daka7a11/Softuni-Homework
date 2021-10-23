@@ -1,4 +1,5 @@
 ﻿using BookShop.Data;
+using BookShop.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace BookShop
         {
             var context = new BookShopContext();
 
-            IncreasePrices(context);
+            Console.WriteLine(GetTotalProfitByCategory(context));
         }
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)
         {
@@ -40,7 +41,7 @@ namespace BookShop
 
             var goldenBooks = context
                 .Books
-                .Where(b => b.Copies < 5000)
+                .Where(b => b.EditionType == EditionType.Gold && b.Copies < 5000)
                 .Select(b => new
                 {
                     b.BookId,
@@ -252,7 +253,7 @@ namespace BookShop
                 .Select(x => new
                 {
                     x.Name,
-                    TotalProfit = x.Books.Select(x => x.Copies / x.Price).Sum()
+                    TotalProfit = x.Books.Select(x => x.Copies * x.Price).Sum()
                 })
                 .OrderByDescending(x => x.TotalProfit)
                 .ThenBy(x => x.Name)
