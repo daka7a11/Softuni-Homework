@@ -1,7 +1,5 @@
 ﻿using CarDealer.Models;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace CarDealer.Data
 {
@@ -10,12 +8,10 @@ namespace CarDealer.Data
         public CarDealerContext()
         {
         }
-
         public CarDealerContext(DbContextOptions options)
             : base(options)
         {
         }
-
 
         public DbSet<Car> Cars { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -28,15 +24,41 @@ namespace CarDealer.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=CarDealer;User=sa; Password =reallyStrongPwd123;");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-Q72FB2M\SQLEXPRESS;Database=CarDealer;Integrated Security=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Part>(e =>
+            {
+                e.HasOne(p => p.Supplier)
+                 .WithMany(s => s.Parts)
+                 .HasForeignKey(p => p.SupplierId);
+            });
+
+            modelBuilder.Entity<Sale>(e =>
+            {
+                e.HasOne(s => s.Car)
+                .WithMany(c => c.Sales)
+                .HasForeignKey(s => s.CarId);
+
+                e.HasOne(s => s.Customer)
+                .WithMany(c => c.Sales)
+                .HasForeignKey(s => s.CustomerId);
+            });
+
             modelBuilder.Entity<PartCar>(e =>
             {
-                e.HasKey(k => new { k.CarId, k.PartId });
+                e.HasKey(x => new { x.PartId, x.CarId });
+
+                e.HasOne(pc => pc.Part)
+                .WithMany(p => p.PartCars)
+                .HasForeignKey(pc => pc.PartId);
+
+                e.HasOne(pc => pc.Car)
+                .WithMany(c => c.PartCars)
+                .HasForeignKey(pc => pc.CarId);
             });
         }
     }

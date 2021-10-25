@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace CarDealer.Models
 {
     public class Sale
     {
+        [Key]
         public int Id { get; set; }
 
         public decimal Discount { get; set; }
