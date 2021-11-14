@@ -1,0 +1,75 @@
+﻿@model IEnumerable<RealEstates.Services.ViewModels.PropertyViewModel>
+@{
+    ViewData["Title"] = "SearchByPrice";
+}
+
+<h1>Search properties by price</h1>
+<form method="get" action="/Properties/Search" class="col-md-6">
+    <div>
+        Min price: <input name="minPrice" class="form-control" />
+    </div>
+    <hr />
+    <div>
+        Max price: <input name="maxPrice" class="form-control" />
+    </div>
+    <hr />
+    <input type="submit" class="btn btn-primary float-right" value="Search" />
+</form>
+
+@{string emptyCol = "--"; }
+
+@if (Model != null)
+{
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-hover table-striped table-sm">
+            <tr>
+                <th>District name</th>
+                <th>Building type</th>
+                <th>PropertyType</th>
+                <th>Size</th>
+                <th>Floor</th>
+                <th>Year</th>
+                <th>Price</th>
+            </tr>
+            @foreach (var property in Model)
+            {
+                <tr>
+                    <td>@property.DistrictName</td>
+                    <td>@property.BuildingType</td>
+                    <td>@property.PropertyType</td>
+                    @if (property.Size > 0)
+                    {
+                        <td>@property.Size</td>
+                    }
+                    else
+                    {
+                        <td>@emptyCol</td>
+                    }
+                    @if (property.Floor != "0/0")
+                    {
+                        <td>@property.Floor</td>
+                    }
+                    else
+                    {
+                        <td>@emptyCol</td>
+                    }
+                    @if (property.Year > 1800)
+                    {
+                        <td>@property.Year г.</td>
+                    }
+                    else
+                    {
+                        <td>@emptyCol</td>
+                    }
+                    <td>@property.Price€</td>
+                </tr>
+            }
+
+        </table>
+    }
+    else
+    {
+        <h2>No properties with given price range!</h2>
+    }
+}
