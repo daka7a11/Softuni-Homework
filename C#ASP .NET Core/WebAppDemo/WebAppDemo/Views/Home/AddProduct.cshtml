@@ -1,0 +1,53 @@
+﻿@using WebAppDemo.Models.Enums
+@model WebAppDemo.ViewModels.AddProductViewModel
+
+@{
+    ViewData["Title"] = "Products";
+}
+<h1>Add product</h1>
+
+<form method="post" class="col-md-5">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name"> </label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Category"> </label>
+        <select asp-for="Category" class="form-control"
+                asp-items="@Html.GetEnumSelectList<Category>()">
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price"> </label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quantity"> </label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ProducedOn"> </label>
+        <input asp-for="ProducedOn" class="form-control" />
+        <span asp-validation-for="ProducedOn" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"> </label>
+        <textarea rows="3" asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <input value="Submit" type="submit" class="btn btn-primary" />
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial"/>
+}

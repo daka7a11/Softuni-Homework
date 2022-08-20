@@ -1,0 +1,12 @@
+﻿@using FluffyDuffyMunchkinCats.Data.Models
+@model List<Cat>
+
+@foreach (var cat in Model)
+{
+    <ul>
+        <li>@cat.Name</li>
+        <li><img src="@cat.ImageUrl"/></li>
+        <li>Age: @cat.Age</li>
+        <li>Breed: @cat.Breed</li>
+    </ul>
+}

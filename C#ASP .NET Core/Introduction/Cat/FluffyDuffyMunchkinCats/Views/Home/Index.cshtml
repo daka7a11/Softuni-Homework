@@ -1,0 +1,21 @@
+﻿@model FluffyDuffyMunchkinCats.ViewModels.IndexViewModel
+@{
+    Layout = null;
+}
+
+<h1>@Model.ProjectName</h1>
+<div>
+    <ul>
+        @foreach (var catName in Model.CatNames)
+        {
+            <li>@catName</li>
+        }
+    </ul>
+</div>
+<a href="/Home/AddCat">
+    <button>Add Cat</button>
+</a>
+<br>
+<a href="/Home/Cats">
+    <button>All Cats</button>
+</a>
