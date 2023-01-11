@@ -119,3 +119,4 @@ $tf/
 
 #Visual studio config folder
 .vs/
+.node_modules
